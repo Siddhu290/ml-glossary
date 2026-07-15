@@ -70,11 +70,11 @@ learned, the flip makes no practical difference, so deep learning
 libraries implement it this way and call it convolution.
 
 For an input of width :math:`W`, kernel width :math:`k`, padding
-:math:`P` and stride :math:`S`, the output width is:
+:math:`P` and stride :math:`s`, the output width is:
 
 .. math::
 
-  W_{out} = \frac{W - k + 2P}{S} + 1
+  W_{out} = \left\lfloor \frac{W - k + 2P}{s} \right\rfloor + 1
 
 The same formula applies to the height.
 
