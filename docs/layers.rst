@@ -86,6 +86,8 @@ kernel weights that produced it.
 
 .. code-block:: python
 
+      import numpy as np
+      
       def conv2d_forward(X, K, stride=1):
           """Slide the kernel K over input X and compute the dot product
           at each position.
